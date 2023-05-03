@@ -1,0 +1,164 @@
+/* INICIO RESET */
+:root {
+    --blue: lightblue;
+    --lightblue: lightskyblue;
+    --tipo-principal: Helvetica, Arial, sans-serif;
+    --tipo-secundaria: Verdana;
+}
+  
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+      --negro: #ececec;
+      --blanco: #393939;
+    }
+} */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      -webkit-animation: none !important;
+              animation: none !important;
+      -webkit-transition: none !important;
+      transition: none !important;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+img, picture, video, iframe, figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+  
+p a {
+    display: inline;
+}
+  
+li {
+    list-style-type: none;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+  
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    content: none;
+}
+
+::-moz-selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+::selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+}
+  
+table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+  
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--tipo-principal);
+    color: var(--negro);
+}
+/* FIN RESET */
+
+#services {
+    padding: 0 40px;
+}
+
+.services-title, .gallery-title {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 45px 0;
+    gap: 15px;
+}
+
+.title-category {
+    font-size: 13px;
+}
+
+.services-title h2, .gallery-title h2 {
+    font-size: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.services-card {
+    max-width: 30%;
+    border: 2px solid var(--blue);
+    border-radius: 14px;
+    padding: 10px;
+}
+
+.services-card-header {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.services-card-description {
+    text-align: center;
+}
+
+#services .gallery {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 40px;
+    align-items: center;
+}
+
